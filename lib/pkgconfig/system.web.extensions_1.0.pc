@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:491f67d5845e3498eefc9dd657b417c8879c97c5875d8a28994ed6c654442b11
-size 289
+Name: System.Web.Extensions
+Description: System.Web.Extensions ASP.NET 2.0 add-on
+Version: 1.0.61025.0
+Libs: -r:/cygdrive/d/j/workspace/build-package-win-mono/2020-02/packaging/Windows/tmp/mono/lib/mono/gac/System.Web.Extensions/1.0.61025.0__31bf3856ad364e35/System.Web.Extensions.dll

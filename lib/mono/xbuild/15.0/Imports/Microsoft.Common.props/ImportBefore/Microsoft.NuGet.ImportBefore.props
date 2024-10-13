@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:603417be76da9d45a2e956ef3845f1e9a8721d5105457f6feae51caca37e4127
-size 896
+<!--
+***********************************************************************************************
+Microsoft.NuGet.ImportBefore.props
+
+WARNING:  DO NOT MODIFY this file unless you are knowledgeable about MSBuild and have
+          created a backup copy.  Incorrect changes to this file will make it
+          impossible to load or build your projects from the command-line or the IDE.
+
+Copyright (c) .NET Foundation. All rights reserved. 
+***********************************************************************************************
+-->
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <NuGetProps Condition="'$(NuGetProps)'==''">$(MSBuildExtensionsPath)\Microsoft\NuGet\Microsoft.NuGet.props</NuGetProps>
+  </PropertyGroup>
+  <Import Condition="Exists('$(NuGetProps)') and '$(SkipImportNuGetProps)' != 'true'" Project="$(NuGetProps)" />
+</Project>

@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e56802c66835b854829034b107dd7f1c438e1ff6b9416f7a50d0390a5d174cb0
-size 989
+<!--
+***********************************************************************************************
+Microsoft.NET.DisableStandardFrameworkResolution.targets
+
+WARNING:  DO NOT MODIFY this file unless you are knowledgeable about MSBuild and have
+          created a backup copy.  Incorrect changes to this file will make it
+          impossible to load or build your projects from the command-line or the IDE.
+
+Copyright (c) .NET Foundation. All rights reserved. 
+***********************************************************************************************
+-->
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <Target Name="GetReferenceAssemblyPaths" />
+  <Target Name="GetFrameworkPaths" />
+
+  <PropertyGroup>
+    <_TargetFrameworkDirectories />
+    <FrameworkPathOverride />
+    <TargetFrameworkDirectory />
+
+    <!-- all references (even the StdLib) come from packages -->
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+
+</Project>

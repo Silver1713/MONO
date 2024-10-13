@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ceaa53eec2dcec88c4a98444eb10df120a37263836843dda6edf6979994afe0b
-size 307
+<?xml version="1.0"?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+        <system.webServer>
+          <aspNetCore>
+                <environmentVariables xdt:Transform="InsertIfMissing" />
+      </aspNetCore>
+    </system.webServer>
+</configuration>

@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9bee4c856aa4391fc5472dbf0a1d236ca60413f2c4fd95d103e0f87361b931ef
-size 478
+<%@ WebHandler Language="c#" class="XSPTest.ChunkedTest" %>
+
+using System;
+using System.Web;
+
+namespace XSPTest
+{
+	public class ChunkedTest : IHttpHandler
+	{
+		public void ProcessRequest (HttpContext context)
+		{
+			HttpResponse response = context.Response;
+			for (int i = 0; i < 10; i++) {
+				string msg = new string ((char) (i + 'a'), 10000);
+				response.Output.WriteLine (msg);
+				response.Flush ();
+			}
+		}
+
+		public bool IsReusable {
+			get { return true; }
+		}
+	}
+}
+

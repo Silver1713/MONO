@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:aa042cd10dfdfd4dbb147f4b1729a2271a58e6c09fe736c72f54a542df932084
-size 124
+#!/bin/sh
+exec "${BASH_SOURCE%/*}"/mono $MONO_OPTIONS "$(cygpath -w "${BASH_SOURCE%/*}"/../lib/mono/4.5/)"permview.exe "$@"

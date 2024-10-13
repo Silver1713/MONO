@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:98a4bc2e0332d1a393beff5ea67fb167ee1a6eba51926cc9887835ab7c79c786
-size 464
+<%@ Page Language="C#" %>
+<%@ Register TagPrefix="mono" TagName="MonoSamplesHeader" src="~/controls/MonoSamplesHeader.ascx" %>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/mono-xsp.css">
+<title>HtmlSelect</title>
+</head>
+<body><mono:MonoSamplesHeader runat="server"/>
+<form runat="server">
+Select a language:<br>
+	<select id="lselect" runat="server">
+	<option>C</option>
+	<option>C#</option>
+	<option>C++</option>
+	</select>
+</form>
+</body>
+</html>

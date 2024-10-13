@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d770bfece902b74c5575187543ffe31937dea14a645fce04d4c212e85be4d164
-size 295
+#!/bin/sh
+cmd_line=
+
+for option do
+	case "$option" in
+		--ecma | --ecmaspec | --error | --man | --simple | --xhtml | --hb)
+			format=`echo $option | sed 's/^--//'`
+			cmd_line="$cmd_line --format=$format"
+			;;
+		*)
+			cmd_line="$cmd_line $option"
+			;;
+	esac
+done
+
+exec mdoc assemble $cmd_line

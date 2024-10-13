@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:765f42d1c99f6d7dce60219e81250cde3b09f8b1fdaa653e68d78ded0971f64d
-size 125
+#!/bin/sh
+exec "${BASH_SOURCE%/*}"/mono $MONO_OPTIONS "$(cygpath -w "${BASH_SOURCE%/*}"/../lib/mono/4.5/)"crlupdate.exe "$@"

@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9b793d8fe5b2d4e70c39f39207f21e24e8fbb3e6e9c89059e491e8df5b8b5860
-size 1239
+#####################################################################################
+#
+#  Copyright (c) Microsoft Corporation. All rights reserved.
+#
+# This source code is subject to terms and conditions of the Apache License, Version 2.0. A 
+# copy of the license can be found in the License.html file at the root of this distribution. If 
+# you cannot locate the  Apache License, Version 2.0, please send an email to 
+# ironpy@microsoft.com. By using this source code in any fashion, you are agreeing to be bound 
+# by the terms of the Apache License, Version 2.0.
+#
+# You must not remove this notice, or any other, from this software.
+#
+#
+#####################################################################################
+
+"""
+Fake runpy.py which emulates what CPython does to properly support the '-m' flag.  
+If you have access to the CPython standard library, you most likely do not need this.
+"""
+
+import sys, nt
+
+def run_module(modToRun, init_globals=None, run_name = '__main__', alter_sys = True):
+    if alter_sys:
+        for o in sys.path:
+            libpath = o + '\\' + modToRun + '.py'
+            if nt.access(libpath, nt.F_OK):
+                sys.argv[0] = libpath
+                break
+    
+    __import__(modToRun)

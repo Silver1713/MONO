@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:49eb26aeefa59941542f5444c3f7cf167e6ca191e67beeed4faea9453bf7d2af
-size 193
+prefix=${pcfiledir}/../..
+assemblies_dir=${prefix}/lib/mono-source-libs
+Sources=${assemblies_dir}/Options.cs
+
+Name: Mono.Options
+Description: Command Line Parsing Library
+Version: 0.2.3

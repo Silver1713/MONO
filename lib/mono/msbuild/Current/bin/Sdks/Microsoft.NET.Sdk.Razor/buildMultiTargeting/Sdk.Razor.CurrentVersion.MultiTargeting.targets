@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ebfce9c1e2dce230f3fbdafff2013c73241e0241256ed80bcb2637def7600536
-size 1116
+﻿<!--
+***********************************************************************************************
+Sdk.Razor.CurrentVersion.MultiTargeting.targets
+
+WARNING:  DO NOT MODIFY this file unless you are knowledgeable about MSBuild and have
+          created a backup copy.  Incorrect changes to this file will make it
+          impossible to load or build your projects from the command-line or the IDE.
+
+Copyright (c) .NET Foundation. All rights reserved.
+***********************************************************************************************
+-->
+<Project ToolsVersion="14.0">
+
+  <Target Name="RazorCompile">
+    <Error Text="The 'RazorCompile' target is not supported without specifying a target framework. The current project targets multiple frameworks, please specify a framework to execute this target." />
+  </Target>
+
+  <Target Name="RazorGenerate">
+    <Error Text="The 'RazorGenerate' target is not supported without specifying a target framework. The current project targets multiple frameworks, please specify a framework to execute this target." />
+  </Target>
+
+</Project>

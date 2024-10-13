@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:090aa7f3884d79a8cee017f50e8cb423de9816655545fb3820e144be542045ef
-size 487
+<%@ Page language="C#" %>
+<%@ Register TagPrefix="mono" TagName="MonoSamplesHeader" src="~/controls/MonoSamplesHeader.ascx" %>
+<html>
+<script runat=server>
+	void Clicked (object o, EventArgs e)
+	{
+	}
+</script>
+<head>
+<link rel="stylesheet" type="text/css" href="/mono-xsp.css">
+<title>Button</title>
+</head>
+<body><mono:MonoSamplesHeader runat="server"/>
+
+<form runat="server">
+<asp:Button id="btn"
+     Text="Submit"
+     OnClick="Clicked"
+     runat="server"/>
+</form>
+</body>
+</html>

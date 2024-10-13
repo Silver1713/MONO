@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:44825c2bbb3380142a698f9486d6b83f4dbc3766ba2275db0a8eca59d60acf47
-size 1566
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <OutputPath>DTAR_CAC0CD0D_3298_4A3D_9EC0_DBFD8306D79F_DTAR</OutputPath>
+        <TargetFrameworkIdentifier>.NETPortable</TargetFrameworkIdentifier>
+        <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+        <TargetFrameworkProfile>Profile49</TargetFrameworkProfile>
+        <FrameworkRegistryBase></FrameworkRegistryBase>
+        <ProcessorArchitecture>msil</ProcessorArchitecture>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(GlobalDTARTargetsImport)' == '' or !Exists('$(GlobalDTARTargetsImport)')">
+        <GlobalDTARTargetsImport>$(MSBuildToolsPath)\Microsoft.Common.targets</GlobalDTARTargetsImport>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <GlobalDesignTimeResolveAssemblyReferencesDependsOn>
+            GetFrameworkPaths;
+            GetReferenceAssemblyPaths;
+        </GlobalDesignTimeResolveAssemblyReferencesDependsOn>
+    </PropertyGroup>
+
+    <Target
+        Name="GlobalDesignTimeResolveAssemblyReferences"
+        DependsOnTargets="$(GlobalDesignTimeResolveAssemblyReferencesDependsOn)" />
+
+    <Import Project="$(GlobalDTARTargetsImport)" />
+    <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\Microsoft.Portable.Core.targets" />
+
+    <!-- Override this check as we don't need a profile in this case as we're only scrapping evaluated properties -->
+    <Target Name="_CheckForInvalidTargetFrameworkProfile" />
+   
+</Project>

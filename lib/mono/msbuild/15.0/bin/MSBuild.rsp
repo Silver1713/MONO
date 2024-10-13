@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9b232acc2ce14bd47bbaeea5e19eefa1e4acc8ebb5e6a23f2d7090ea94f90388
-size 720
+#------------------------------------------------------------------------------
+# This file contains command-line options that MSBuild will process as part of
+# every build, unless the "/noautoresponse" switch is specified.
+# 
+# MSBuild processes the options in this file first, before processing the
+# options on the command line. As a result, options on the command line can
+# override the options in this file. However, depending on the options being
+# set, the overriding can also result in conflicts.
+# 
+# NOTE: The "/noautoresponse" switch cannot be specified in this file, nor in
+# any response file that is referenced by this file.
+#------------------------------------------------------------------------------

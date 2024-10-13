@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:91ece74d0e994a9af2b4c02345a5cbd7ca93efa22f634d8ceee06b33f9895b8d
-size 804
+<!--
+***********************************************************************************************
+Sdk.props
+
+WARNING:  DO NOT MODIFY this file unless you are knowledgeable about MSBuild and have
+          created a backup copy.  Incorrect changes to this file will make it
+          impossible to load or build your projects from the command-line or the IDE.
+
+Copyright (C) Microsoft Corp. All rights reserved.
+***********************************************************************************************
+-->
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Sdk="Microsoft.NET.Sdk" Project="Sdk.props" />
+  <Import Project="$(MSBuildThisFileDirectory)..\build\Xamarin.IoT.props" Condition="Exists('$(MSBuildThisFileDirectory)..\build\Xamarin.IoT.props')" />
+</Project>

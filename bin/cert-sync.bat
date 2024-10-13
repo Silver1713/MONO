@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:87314f84226e03f93cadfffaf2c7a373ad75a6e25d2ea8449fd01f135299c112
-size 85
+@echo off
+"%~dp0\mono.exe" %MONO_OPTIONS% "%~dp0\..\lib\mono\4.5\cert-sync.exe" %*

@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a10027f5f3a95ab2b2b39a328460688b229edc89ff5d5265c9f125378a4764ac
-size 128
+#!/bin/sh
+exec "${BASH_SOURCE%/*}"/mono $MONO_OPTIONS "$(cygpath -w "${BASH_SOURCE%/*}"/../lib/mono/4.5/)"mono-xmltool.exe "$@"

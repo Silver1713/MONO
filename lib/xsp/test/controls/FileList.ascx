@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:be92ee2b6ce17fa91fb773460e54d74c84f8664ec4b12a3fdae109586cb97223
-size 1033
+<%@ Control Language="C#" %>
+<%@ Import Namespace="System.Collections" %>
+<%@ Import Namespace="System.IO" %>
+<%@ Import Namespace="System.Text" %>
+<%
+   ArrayList dirs = new ArrayList ();
+   ArrayList files = new ArrayList ();
+   string physPath = Path.GetDirectoryName (Request.PhysicalPath);
+   DirectoryInfo dir = new DirectoryInfo (physPath);
+   
+   foreach (string d in Directory.GetDirectories (physPath))
+          dirs.Add (d);
+   foreach (string f in Directory.GetFiles (physPath)) {
+          if (f == "index.aspx" || f == "default.aspx")
+                 continue;
+
+          files.Add (f);
+   }
+
+   StringBuilder sb = new StringBuilder ("<ul class=\"dirlist\">");
+   dirs.Sort ();
+   foreach (string d in dirs)
+          sb.AppendFormat ("<li><a href=\"{0}\" class=\"indexDirectory\">{0}</a></li>", Path.GetFileName (d));
+  
+   files.Sort ();
+   foreach (string f in files)
+          sb.AppendFormat ("<li><a href=\"{0}\" class=\"indexFile\">{0}</a></li>", Path.GetFileName (f));
+
+   Response.Write (sb.ToString ());
+%>

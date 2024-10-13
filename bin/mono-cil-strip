@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0b4aeb95f09efb650b4a6548715a20a3e4d4e478ed3c36ad6a0707a03ff1c298
-size 130
+#!/bin/sh
+exec "${BASH_SOURCE%/*}"/mono $MONO_OPTIONS "$(cygpath -w "${BASH_SOURCE%/*}"/../lib/mono/4.5/)"mono-cil-strip.exe "$@"

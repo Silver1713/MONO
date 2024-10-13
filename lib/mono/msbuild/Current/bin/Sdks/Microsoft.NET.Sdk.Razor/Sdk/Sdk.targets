@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a667c3f25501ee8ea6602ef472a2e16ab23d5e55e60be89d716061b7eb257559
-size 1263
+<!--
+***********************************************************************************************
+Sdk.targets
+
+WARNING:  DO NOT MODIFY this file unless you are knowledgeable about MSBuild and have
+          created a backup copy.  Incorrect changes to this file will make it
+          impossible to load or build your projects from the command-line or the IDE.
+
+Copyright (c) .NET Foundation. All rights reserved.
+***********************************************************************************************
+-->
+<Project ToolsVersion="14.0">
+
+  <Import Sdk="Microsoft.NET.Sdk" Project="Sdk.targets" Condition="'$(_RazorSdkImportsMicrosoftNetSdk)' == 'true'" />
+
+  <PropertyGroup Condition="'$(RazorSdkCurrentVersionTargets)' == ''">
+    <RazorSdkCurrentVersionTargets Condition="'$(IsCrossTargetingBuild)' == 'true'">$(MSBuildThisFileDirectory)..\buildMultiTargeting\Sdk.Razor.CurrentVersion.MultiTargeting.targets</RazorSdkCurrentVersionTargets>
+    <RazorSdkCurrentVersionTargets Condition="'$(IsCrossTargetingBuild)' != 'true'">$(MSBuildThisFileDirectory)..\build\netstandard2.0\Sdk.Razor.CurrentVersion.targets</RazorSdkCurrentVersionTargets>
+  </PropertyGroup>
+
+  <Import Project="$(RazorSdkCurrentVersionTargets)" />
+
+</Project>

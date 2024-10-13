@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cce2a8fd0dbe6a9e0e127a14aa63cf510edc52bec92440a0a2400f6fbde5f278
-size 377
+<%@ WebHandler Language="c#" Class="WebHandlerTest.SimplePage" %>
+
+using System.Web;
+
+namespace WebHandlerTest
+{
+	class SimplePage : IHttpHandler
+	{
+		public void ProcessRequest (HttpContext context)
+		{
+			HttpResponse resp = context.Response;
+			resp.Write ("<html><body><h1>Hi there!</h1></body></html>\n");
+		}
+
+		public bool IsReusable {
+			get { return true; }
+		}
+	}
+}
+

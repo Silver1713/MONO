@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:315b16764c5bb69fcf6484224de3e293deff47b6723c7b14efdc432b3ed5bf55
-size 104
+#!/bin/sh
+exec "${BASH_SOURCE%/*}"/mono "$(cygpath -w "${BASH_SOURCE%/*}"/../lib/)ironruby/ir.exe" "$@"

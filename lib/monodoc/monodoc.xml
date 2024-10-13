@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:80de1af405556addbb481d9ac123e5f94b08ad7869c90fb469d71eb08c941480
-size 256
+<?xml version="1.0"?>
+<node label="Mono Documentation" name="libraries">
+  <node label="Commands and Files" name="man" />
+  <node label="Languages" name="languages" />
+  <node label="Tools" name="tools" />
+  <node label="Various" name="various" />
+</node>

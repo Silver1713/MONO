@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a4261bf1fd4266e98d8ecfdad405590ecc990bf1419d9fc81338177d0a694cb3
-size 1040
+<%@ Page language="C#" %>
+<%@ Register TagPrefix="mono" TagName="MonoSamplesHeader" src="~/controls/MonoSamplesHeader.ascx" %>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/mono-xsp.css">
+<title>RadioButtonList</title>
+</head>
+<body><mono:MonoSamplesHeader runat="server"/>
+
+<form runat="server">
+Horizontal:
+<p>
+<asp:RadioButtonList id="rbl1" repeatDIrection="horizontal" runat="server">
+	<asp:ListItem>Seven</asp:ListItem>
+	<asp:ListItem>Eleven</asp:ListItem>
+	<asp:ListItem>Thirteen</asp:ListItem>
+	<asp:ListItem>Seventeen</asp:ListItem>
+	<asp:ListItem>Twenty-three</asp:ListItem>
+	<asp:ListItem>Twenty-nine</asp:ListItem>
+</asp:RadioButtonList>
+<p>
+Vertical:
+<p>
+<asp:RadioButtonList id="rbl2" repeatDirection="vertical" runat="server">
+	<asp:ListItem>Seven</asp:ListItem>
+	<asp:ListItem>Eleven</asp:ListItem>
+	<asp:ListItem>Thirteen</asp:ListItem>
+	<asp:ListItem>Seventeen</asp:ListItem>
+	<asp:ListItem>Twenty-three</asp:ListItem>
+	<asp:ListItem>Twenty-nine</asp:ListItem>
+</asp:RadioButtonList>
+</form>
+</body>
+</html>
+

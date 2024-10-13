@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0127fe5cab8b4a1d8baac1e6ae9432cb91cb560215ca86441b1244a098eff31c
-size 527
+<%@ Page Language="C#" %>
+<%@ Register TagPrefix="mono" TagName="MonoSamplesHeader" src="~/controls/MonoSamplesHeader.ascx" %>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/mono-xsp.css">
+<script runat="server">
+	public void Page_Load (object sender, EventArgs e)
+	{
+		mySpan.InnerText = "This is ok";
+	}
+</script>
+<title>Just a HtmlGenericControl (a span in this case) fullfilled
+in Page_Load ()</title>
+</head>
+<body><mono:MonoSamplesHeader runat="server"/>
+<span id="mySpan" runat="server" />
+</body>
+</html>
+

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3f16b839495e90231d08972d67ea7ceb7395cf726b40e78a3e5fccb405450545
-size 569
+<%@ Page Language="C#" %>
+<%@ Register TagPrefix="mono" TagName="MonoSamplesHeader" src="~/controls/MonoSamplesHeader.ascx" %>
+<html>
+<head>
+<title>HtmlInputText: text and password</title>
+<link rel="stylesheet" type="text/css" href="/mono-xsp.css">
+</head>
+<body><mono:MonoSamplesHeader runat="server"/>
+<form method=post runat="server">
+<input type="text" id="asText" maxlength=40 size=40 value="Your name goes here" runat="server"/>
+<br>
+<input type="password" id="asPassword" maxlength=8 size=8 value="Your name goes here" runat="server"/>
+</form>
+</body>
+</html>
+

@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c3d982a969914ddc4acec678ee39940a4ca1e713b83fe065c60a9849280521fc
-size 84
+@echo off
+"%~dp0\mono.exe" %MONO_OPTIONS% "%~dp0\..\lib\mono\4.5\makecert.exe" %*

@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:aed4309e6cea88cd0d84dc8e43044f8b760a5dfae51f2586c4bb030b56056bfa
-size 1186
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Framework
+    Identifier=".NETFramework"
+    Profile="*"
+    MinimumVersion="4.6"
+    Family=".NETFramework"
+    MinimumVisualStudioVersion="14.0"
+    DisplayName=".NET Framework"
+    MinimumVersionDisplayName="4.6"
+    PlatformArchitectures="AnyCPU;x86;x64"
+    IsBuiltIn="true"
+    IsHidden="false">
+    <RetargetData
+        ProjectLanguage="CSharp">
+        <NuGet
+            Identifier="net46.app"
+            PortableTargetMoniker="net452">
+            <Package
+                Identifier="Microsoft.NETCore"
+                Version="5.0.0" />
+            <Package
+                Identifier="Microsoft.NETCore.Portable.Compatibility"
+                Version="1.0.0" />
+        </NuGet>
+    </RetargetData>
+    <RetargetData
+        ProjectLanguage="VisualBasic">
+        <NuGet
+            Identifier="net46.app"
+            PortableTargetMoniker="net452">
+            <Package
+                Identifier="Microsoft.NETCore"
+                Version="5.0.0" />
+            <Package
+                Identifier="Microsoft.NETCore.Portable.Compatibility"
+                Version="1.0.0" />
+        </NuGet>
+    </RetargetData>
+</Framework>

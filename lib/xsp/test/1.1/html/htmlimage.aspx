@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8a5dc94ca3903d057fa3f0cbe2f5d92bf8beb0ada85f3a2c9bcba3cf3080f43f
-size 459
+<%@ Page Language="C#" %>
+<%@ Register TagPrefix="mono" TagName="MonoSamplesHeader" src="~/controls/MonoSamplesHeader.ascx" %>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/mono-xsp.css">
+<title>HtmlImage</title>
+</head>
+<body><mono:MonoSamplesHeader runat="server"/>
+<img ID="myImage" src="http://www.mono-project.com/files/8/8d/Mono-gorilla-aqua.100px.png"
+runat="server" alt="The Ximian dancing monkey logo" align="middle"/>
+</body>
+</html>
+

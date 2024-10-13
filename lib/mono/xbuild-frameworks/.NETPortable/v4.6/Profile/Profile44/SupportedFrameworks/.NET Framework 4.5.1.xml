@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ce1ef5df8f9be8c3c4ae34b62b1c3e102689e6ab220abc25bf44c18873d1190c
-size 308
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Framework
+    Identifier=".NETFramework"
+    Profile="*"
+    MinimumVersion="4.5.1"
+    Family=".NETFramework"
+    MinimumVisualStudioVersion="12.0"
+    DisplayName=".NET Framework"
+    MinimumVersionDisplayName="4.5.1"
+    PlatformArchitectures="AnyCPU;x86;x64" />

@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:96299232820910af3b99d3ebb5c92a05976959ef89da02a4d7a90c45a57e20ca
-size 132
+#!/bin/sh
+exec "${BASH_SOURCE%/*}"/mono $MONO_OPTIONS "$(cygpath -w "${BASH_SOURCE%/*}"/../lib/mono/4.5/)"mono-symbolicate.exe "$@"

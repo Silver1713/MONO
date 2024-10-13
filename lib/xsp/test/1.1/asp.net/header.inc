@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5e43a28f1d4b075ca4253fa50c685899afae1e2bbb1f1736727d0508402ce921
-size 510
+<%@ Page language="C#" %>
+<%@ Register TagPrefix="mono" TagName="MonoSamplesHeader" src="~/controls/MonoSamplesHeader.ascx" %>
+<%-- we can even override the asp prefix with @ register --%>
+<%@ Register TagPrefix="Acme" namespace="System.Web.UI.WebControls" assembly="System.Web" %>
+<%@ Register TagPrefix="Acme" TagName="One" Src="registertest1.ascx" %>
+<%@ Register TagPrefix="Acme" TagName="Two" Src="registertest2.ascx" %>
+
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/mono-xsp.css">
+</head>

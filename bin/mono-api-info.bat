@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c2665619dcf244dfba17c43afe08fcbf272b8be0f75292f3a200532477a5c775
-size 89
+@echo off
+"%~dp0\mono.exe" %MONO_OPTIONS% "%~dp0\..\lib\mono\4.5\mono-api-info.exe" %*

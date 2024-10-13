@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eebe0d571e1effe8be552e8cb4b4365a3407561928b5cc82fc15bb682025db41
-size 225
+prefix=${pcfiledir}/../..
+assemblies_dir=${prefix}/lib/mono-source-libs
+Sources=${assemblies_dir}/getline.cs
+
+Name: Mono.Terminal.LineEditor
+Description: Terminal text entry editor using System.Console.
+Version: 0.2.1

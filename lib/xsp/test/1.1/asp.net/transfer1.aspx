@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4ecb17edf81a2675465d3d33c565eaab2e81a3b6fe242cd9380959e56e6c8e0a
-size 468
+<%@ Page Language="C#" Debug="true" %>
+<%@ Register TagPrefix="mono" TagName="MonoSamplesHeader" src="~/controls/MonoSamplesHeader.ascx" %>
+<script runat="server">
+	void Page_Load ()
+	{
+		Server.Transfer ("transfer2.aspx");
+	}
+</script>
+<html>
+<head><title>Transfer test 1</title>
+<link rel="stylesheet" type="text/css" href="/mono-xsp.css">
+</head>
+<body><mono:MonoSamplesHeader runat="server"/>
+This will never be seen on the browser. Miguel sucks.
+</body>
+</html>
+

@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:065deb8fc5a541f770e2c8345c8de4c622e8bdc98dbf5af27c71cf6e5c10b02e
-size 401
+<%@ Page Language="C#" MasterPageFile="frame.master" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="title" Runat="server">
+Welcome again!
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="content" Runat="server">
+<p>This is another content page for the same master page file.</p>
+<p>Click <a href="content1.aspx">here</a> to see another content page.</p>
+</asp:Content>

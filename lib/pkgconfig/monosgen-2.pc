@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8b73d21c9baf870b8fdb46f4acc2a1372c29b18b82306a7d80cb3a5732cf21ed
-size 380
+prefix=${pcfiledir}/../..
+exec_prefix=${pcfiledir}/../..
+libdir=${prefix}/lib
+includedir=${prefix}/include/mono-2.0
+sysconfdir=${prefix}/etc
+
+Name: Mono
+Description: Mono Runtime
+Version: 6.12.0
+Libs: -L${libdir}  -lmonosgen-2.0 -mms-bitfields -mwindows  -lws2_32 -lpsapi -lole32 -lwinmm -loleaut32 -ladvapi32 -lversion
+Cflags: -I${includedir} -mms-bitfields -mwindows

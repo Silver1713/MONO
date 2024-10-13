@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7ecfdf939962669d7a79bf5286cdf5fb5aab2d14a327c902f446bf975e725185
-size 581
+<%@ Page language="C#" %>
+<%@ Register TagPrefix="mono" TagName="MonoSamplesHeader" src="~/controls/MonoSamplesHeader.ascx" %>
+<html>
+<link rel="stylesheet" type="text/css" href="/mono-xsp.css">
+<script runat=server>
+	void Page_Load (object o, EventArgs e)
+	{
+		lbl1.Text += ". This added in Page_Load.";
+	}
+</script>
+<head>
+<title>Label</title>
+</head>
+<body><mono:MonoSamplesHeader runat="server"/>
+<form runat="server">
+<asp:label id="lbl1" Text="Text as property" runat="server"/>
+<br>
+<asp:label id="lbl2" runat="server">Text between tags</asp:label>
+</form>
+</body>
+</html>
+

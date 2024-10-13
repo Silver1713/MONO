@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:508acdae9bc43cc59583b4415f27587366ae6d33a9d01af169339d8a35ad281d
-size 82
+@echo off
+"%~dp0\mono.exe" %MONO_OPTIONS% "%~dp0\..\lib\mono\4.5\setreg.exe" %*

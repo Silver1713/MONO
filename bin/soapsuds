@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2f31b8717bb1319b96e32b835dae2f7936000a868518d1234dd9c45f4e52d76a
-size 124
+#!/bin/sh
+exec "${BASH_SOURCE%/*}"/mono $MONO_OPTIONS "$(cygpath -w "${BASH_SOURCE%/*}"/../lib/mono/4.5/)"soapsuds.exe "$@"

@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:014152f62c775aee539bfa13131637b3e20778c0712b91b77fbed437acf49035
-size 84
+@echo off
+"%~dp0\mono.exe" %MONO_OPTIONS% "%~dp0\..\lib\mono\4.5\sqlsharp.exe" %*

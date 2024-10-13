@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:49b5e16040dab2464dc49dbdc36d5d07695d1a93c383f1e11033756365fe4e87
-size 207
+prefix=${pcfiledir}/../..
+exec_prefix=${pcfiledir}/../..
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: Mono.Cairo
+Description: Cairo bindings for Mono
+Version: 6.12.0
+Libs: -r:Mono.Cairo

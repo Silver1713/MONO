@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2063e22706d9a91cdcc84a6361ec34a7d8b3f1ff5c0012334e46749674ed6a88
-size 83
+@echo off
+"%~dp0\mono.exe" %MONO_OPTIONS% "%~dp0\..\lib\mono\4.5\svcutil.exe" %*

@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:60fe3db3016d77aeb65619777ba21d9b211e6c66d2f00d704c6897e2feb92c08
-size 475
+<%@ Page language="C#" %>
+<%@ Register TagPrefix="mono" TagName="MonoSamplesHeader" src="~/controls/MonoSamplesHeader.ascx" %>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/mono-xsp.css">
+</head>
+<body><mono:MonoSamplesHeader runat="server"/>
+   <h3>Xml Example</h3>
+   <form runat="server">
+      <asp:Xml id="xml1" 
+           DocumentSource="people.xml" 
+           TransformSource="peopletable.xsl" 
+           runat="server" />
+   </form>
+</body>
+</html>
+

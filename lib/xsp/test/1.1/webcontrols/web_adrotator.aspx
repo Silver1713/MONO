@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:44b4df0ec4f1178ee368e4fcb625e9d68ab7fc372e86a8f737781aeb0875f526
-size 425
+<%@ Page language="C#" %>
+<%@ Register TagPrefix="mono" TagName="MonoSamplesHeader" src="~/controls/MonoSamplesHeader.ascx" %>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/mono-xsp.css">
+<title>AdRotator</title>
+</head>
+<body><mono:MonoSamplesHeader runat="server"/>
+<form runat="server">
+<asp:AdRotator id="adr" runat="server"
+	AdvertisementFile="web_adrotator.xml"
+	Target="_top" />
+</form>
+</body>
+</html>
+

@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1d0e2350d3fc6889ce92886d6000ae19f5855953a15556328287b11a9eb7b930
-size 267
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Framework
+    Identifier=".NETCore"
+    Profile="*"
+    MinimumVersion="4.5.1"
+    Family="Windows"
+    MinimumVisualStudioVersion="12.0"
+    DisplayName="Windows Store apps (Windows 8.1)"
+    MinimumVersionDisplayName="" />

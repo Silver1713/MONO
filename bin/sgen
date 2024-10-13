@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f484240120adefd89a3466c7ee8e9e337c0f6db988bb8f36bb7a0be18b6b6827
-size 120
+#!/bin/sh
+exec "${BASH_SOURCE%/*}"/mono $MONO_OPTIONS "$(cygpath -w "${BASH_SOURCE%/*}"/../lib/mono/4.5/)"sgen.exe "$@"

@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6e8a2ddaf350c3456123b24a822761038c3f611cf25e6f1dbde41e98fbf365b9
-size 137
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>FSharp.Compiler.Server.Shared</name></assembly>
+<members>
+</members>
+</doc>

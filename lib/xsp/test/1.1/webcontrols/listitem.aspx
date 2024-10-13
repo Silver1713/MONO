@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b84a06e8b3e70761308fa38933d39e5361bfb63c5a106da544f1b34bcc802671
-size 833
+<%@ Page language="c#" %>
+<%@ Register TagPrefix="mono" TagName="MonoSamplesHeader" src="~/controls/MonoSamplesHeader.ascx" %>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/mono-xsp.css">
+<title>List Items</title>
+</head>
+<body><mono:MonoSamplesHeader runat="server"/>
+
+    <h3>ListItem test</h3>
+    <form runat="server">
+        <asp:DropDownList id="NumberList" runat="server">
+          <asp:ListItem>One</asp:ListItem>
+          <asp:ListItem>Two</asp:ListItem>
+          <asp:ListItem>Three</asp:ListItem>
+          <asp:ListItem>Cuatro</asp:ListItem>
+          <asp:ListItem>Five</asp:ListItem>
+          <asp:ListItem>Six</asp:ListItem>
+          <asp:ListItem>Seven</asp:ListItem>
+          <asp:ListItem>Eight</asp:ListItem>
+        </asp:DropDownList>       
+    </form>
+</body>
+</html>

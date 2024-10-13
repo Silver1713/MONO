@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4a4538ee9b1a53a6e321899578956450419f8536965a092a130428290993a8b6
-size 470
+<%@ Page language="C#" %>
+<%@ Register TagPrefix="mono" TagName="MonoSamplesHeader" src="~/controls/MonoSamplesHeader.ascx" %>
+<%@ Register TagPrefix="Mono" Namespace="Mono.Controls" assembly="typedesc" %>
+<html>
+<head>
+<title>Property that needs TypeConverter</title>
+<link rel="stylesheet" type="text/css" href="/mono-xsp.css">
+</head>
+<body><mono:MonoSamplesHeader runat="server"/>
+<Mono:WeirdControl id="weird" runat="server" WeirdObject="Passed!"/>
+</body>
+</html>

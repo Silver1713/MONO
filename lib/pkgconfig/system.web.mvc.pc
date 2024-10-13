@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9651d87b2a95f50350afe87f8e2058cc3aaf50e0696b48a0e5ff92c87e533db5
-size 248
+Name: System.Web.Mvc
+Description: System.Web.Mvc - ASP.NET MVC
+Version: 1.0.0.0
+Libs: -r:/cygdrive/d/j/workspace/build-package-win-mono/2020-02/packaging/Windows/tmp/mono/lib/mono/gac/System.Web.Mvc/1.0.0.0__31bf3856ad364e35/System.Web.Mvc.dll

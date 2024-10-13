@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ee2aa4a2e77572cbebb005a795318ff1f97fdab86761c307a92927221c0fd7ec
-size 834
+<%@ Page Language="C#" %>
+<%@ Register TagPrefix="mono" TagName="MonoSamplesHeader" src="~/controls/MonoSamplesHeader.ascx" %>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/mono-xsp.css">
+<title>HtmlTable, HtmlTableRow, HtmlTableCell</title>
+<script runat="server">
+	void Page_Load(Object sender, EventArgs e) 
+	{
+		for (int i = 0; i < 5; i++){
+			HtmlTableRow row = new HtmlTableRow ();
+			for (int j = 0; j < 4; j++){
+				HtmlTableCell cell = new HtmlTableCell ();
+				cell.Controls.Add (new LiteralControl ("Row " + i + ", cell " + j));
+				row.Cells.Add (cell);
+			}
+			myTable.Rows.Add (row);
+		}
+	}
+</script>
+</head>
+<body><mono:MonoSamplesHeader runat="server"/>  
+<form runat="server">
+<p>
+<table id="myTable" CellPadding=2 CellSpacing=1 Border="2" BorderColor="blue" runat="server" /> 
+</form>
+</body>
+</html>
+

@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:63981c0f969625bac66a44459bad731e94f0f403fe83ef2776fef423237045b1
-size 242
+
+Name: WCF
+Description: References WCF for compilation
+Version: 6.12.0
+Libs: -r:System.Runtime.Serialization.dll -r:System.IdentityModel.dll -r:System.IdentityModel.Selectors.dll -r:System.ServiceModel.dll -r:System.ServiceModel.Web.dll

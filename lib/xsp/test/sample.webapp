@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3897d39312f3100240f951dcd4a87d23358792d60b31acf25c9fd3bb36e94ba4
-size 323
+<web-application>
+        <name>Root</name>
+        <vpath>/</vpath>
+        <path>/home/mono/public_html/html</path>
+	<!-- vhost and port are ignored in xsp.exe -->
+        <vhost>my.host.name</vhost>
+        <vport>8080</vport>
+	<!-- <enabled> is true by default -->
+	<!-- <enabled>false</enabled> -->
+</web-application>

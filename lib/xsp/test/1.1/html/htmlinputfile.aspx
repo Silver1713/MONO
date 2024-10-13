@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6bbe3ca5ad3a3a87fa8a068d48cfcf6f510e8a7859ad9de4e942c5c98433f282
-size 559
+<%@ Page Language="C#" %>
+<%@ Register TagPrefix="mono" TagName="MonoSamplesHeader" src="~/controls/MonoSamplesHeader.ascx" %>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/mono-xsp.css">
+<title>HtmlInputFile</title>
+</head>
+<body><mono:MonoSamplesHeader runat="server"/>
+<form id="myForm" name="myform" action="htmlinputfile.aspx" method="post" enctype="image/jpeg" runat="server">
+Pick a JPEG file:
+<input id="myFile" type="file" runat="server"> 
+<br>
+<input id="smt" type="submit" value="Go send it!" runat="server">
+</form>
+</body>
+</html>
+

@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0983cd4eb4bf1b4d876f8ef5d626f23ecb3d9de5814171059352b1180a50accf
-size 603
+<%@ Page Language = "C#" %>
+<%@ Register TagPrefix="mono" TagName="MonoSamplesHeader" src="~/controls/MonoSamplesHeader.ascx" %>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/mono-xsp.css">
+<title>Calendar Test</title>
+</head>
+<body><mono:MonoSamplesHeader runat="server"/>
+	<form runat=server>
+		<h3>Calendar and properties</h3>
+		<asp:calendar id="Calendar1"
+		Font-Name="Arial" showtitle="true"
+		runat="server">
+			<SelectedDayStyle BackColor="Blue" 
+					ForeColor="Red"/>
+			<TodayDayStyle BackColor="#CCAACC" 
+					ForeColor="#000000"/>
+		</asp:Calendar>
+
+	</form>
+</body>
+</html>
+

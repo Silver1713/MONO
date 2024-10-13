@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1b812405a31360af83190719e951a822547dab27950f4c266cc5c0dc066d9fb0
-size 83
+@echo off
+"%~dp0\mono.exe" %MONO_OPTIONS% "%~dp0\..\lib\mono\4.5\gacutil.exe" %*

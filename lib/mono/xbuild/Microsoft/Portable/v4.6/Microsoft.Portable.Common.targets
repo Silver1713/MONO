@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e9891e82a511de910668aa8db02264bee9bf5f71093ad79bfab318e343029fa0
-size 735
+﻿<!--
+***********************************************************************************************
+Microsoft.Portable.Common.targets
+
+Contains common properties that are shared by all v4.5 Portable Library projects.
+
+WARNING:  DO NOT MODIFY this file unless you are knowledgeable about MSBuild and have
+          created a backup copy.  Incorrect changes to this file will make it
+          impossible to load or build your projects from the command-line or the IDE.
+
+***********************************************************************************************
+-->
+
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  
+    <Import Project="..\Microsoft.Portable.Core.props" />
+
+</Project>

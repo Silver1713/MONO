@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8fa6ad4497b1bccc5ff413c3c72a4b952da1865fa12053b8c84265f464fbf476
-size 630
+.TH "dtd2xsd" 1
+.SH NAME
+dtd2xsd \- XML Schema generator from XML document that contains DTD.
+.SH SYNOPSIS
+.B dtd2xsd
+[options]
+.I instance-xmlfile
+.I optional-xsdfile
+.SH DESCRIPTION
+dtd2xsd generates an XML schema document from a document type definition (DTD).
+Right now you have to specify instance XML file that references or contains
+DTD. DTD itself is not readable with this tiny tool.
+.PP
+By default, it outputs resulting XML schema to console. If optional-xsdfile
+parameter is specified, it outputs the result to the specified file.
+.SH AUTHOR
+Atsushi Enomoto <atsushi@ximian.com>
+.SH SEE ALSO
+mono(1)

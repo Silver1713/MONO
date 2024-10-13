@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1d49b0cd95f4eb4f70791ede2cfefc4050c3eca5be0c94ac379d8e60b4afbcc1
-size 518
+<!-- #include virtual="header.inc" -->
+<script language="C#" runat="server">
+      void Clicked (object sender, EventArgs e)
+      {
+          One.Text = "Message text changed!";
+          One.Color = "red";
+          Two.Text = "Message text changed2!";
+          Two.Color = "red";
+	  Three.Text = "Text changed!";
+      }
+</script>
+
+<body><mono:MonoSamplesHeader runat="server"/>
+This is pretty much the same as registertest.aspx, but splitted in 3 files.
+<p>
+<!-- #include virtual="body.inc" -->
+</body>
+</html>
+

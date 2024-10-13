@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:28146a867b33a665a1c46a16eeed181cb0ad71a12d16e06fb783d034317dd2d9
-size 184
+#!/bin/sh
+MONO_GC_PARAMS="nursery-size=64m,$MONO_GC_PARAMS" exec "${BASH_SOURCE%/*}"/mono $MONO_OPTIONS "$(cygpath -w "${BASH_SOURCE%/*}"/../lib/mono/xbuild/14.0/bin/)"xbuild.exe "$@"

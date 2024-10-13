@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5251f42d77b33f6f5486707961cd23b09f1b147b5d907f0335a41ce13211b026
-size 511
+<%@ Page Language="C#" %>
+<%@ Register TagPrefix="mono" TagName="MonoSamplesHeader" src="~/controls/MonoSamplesHeader.ascx" %>
+<html>
+<script runat="server">
+	void Page_Load (object sender, EventArgs e) 
+	{
+		 myTA.InnerText = "Hi there!\nCool!";
+	}
+</script>
+<head>
+<link rel="stylesheet" type="text/css" href="/mono-xsp.css">
+<title>HtmlTextArea</title>
+</head>
+<body><mono:MonoSamplesHeader runat="server"/>
+<form runat="server">
+<textarea id="myTA" cols=25 rows=5 runat="server" />
+</form>
+</body>
+</html>
+

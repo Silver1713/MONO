@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:499c352256a050497188964c1f5dc3cd357c037597b4a11ff544c70605693827
-size 565
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+
+    <!-- disable wilcard include of Compile items, file ordering is a feature -->
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+
+    <!-- project guid used by dotnet sln add -->
+    <DefaultProjectTypeGuid Condition=" '$(DefaultProjectTypeGuid)' == '' ">{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}</DefaultProjectTypeGuid>
+  </PropertyGroup>
+
+</Project>

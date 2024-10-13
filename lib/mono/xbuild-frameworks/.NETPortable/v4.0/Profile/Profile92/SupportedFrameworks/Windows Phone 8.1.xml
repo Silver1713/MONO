@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f887028bbd3085898089c870cf1b79e46b4205611bc5dad763da9829273e2d31
-size 401
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Framework
+    Identifier="WindowsPhoneApp"
+    Profile="*"
+    MinimumVersion="8.1"
+    Family="WindowsPhoneApp"
+    MinimumVisualStudioVersion="12.0"
+    DisplayName="Windows Phone"
+    MinimumVersionDisplayName="8.1"
+    PlatformArchitectures="AnyCPU;x86;ARM">
+    <Platform
+        Identifier="WindowsPhoneApp"
+        MinimumVersion="8.1" />
+</Framework>

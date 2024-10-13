@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c8e7b7330d280061adba334aec1f8bc1e31f6a1dca58dd5be69d304342f924c8
-size 378
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Framework
+    Identifier=".NETCore"
+    Profile="*"
+    MinimumVersion="4.5.1"
+    Family="Windows"
+    MinimumVisualStudioVersion="12.0"
+    DisplayName="Windows"
+    MinimumVersionDisplayName="8.1"
+    PlatformArchitectures="AnyCPU;x86;x64;ARM">
+    <Platform
+        Identifier="Windows"
+        MinimumVersion="8.1" />
+</Framework>

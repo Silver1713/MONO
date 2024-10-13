@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2ae4d691bea3d96568d398b958a984c5ad2c6778cdec01ad7aeaa5230f88dd34
-size 365
+using System;
+using System.Web;
+using System.Web.Configuration;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace Samples
+{
+	public class Application
+	{
+		public Application (HttpContext ctx)
+		{
+			SiteMapSection sms = WebConfigurationManager.GetSection ("system.web/siteMap") as SiteMapSection;
+			if (sms != null)
+				sms.Enabled = true;
+		}
+	}
+}

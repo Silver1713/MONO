@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e78f620dca11c7c1265bc91e8bb35684fb2c5707ab94ec1bc9d31e785d1e8a4d
-size 195
+<?xml version="1.0"?>
+<monodoc>
+  <node label="Novell Libraries" name="classlib-novell" parent="libraries" />
+  <source provider="ecma" basefile="Novell" path="classlib-novell"/>
+</monodoc>

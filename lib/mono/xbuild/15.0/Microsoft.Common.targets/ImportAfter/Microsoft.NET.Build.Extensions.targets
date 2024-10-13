@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:858b4e6dbf742d54b2a8f2b2dd969e247290b615bd3d5b6262e59f15011f6903
-size 1043
+<!--
+***********************************************************************************************
+Microsoft.NET.Build.Extensions.targets
+
+WARNING:  DO NOT MODIFY this file unless you are knowledgeable about MSBuild and have
+          created a backup copy.  Incorrect changes to this file will make it
+          impossible to load or build your projects from the command-line or the IDE.
+
+Copyright (c) .NET Foundation. All rights reserved. 
+***********************************************************************************************
+-->
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MicrosoftNETBuildExtensionsTargets Condition="'$(MicrosoftNETBuildExtensionsTargets)' == ''">$(MSBuildExtensionsPath)\Microsoft\Microsoft.NET.Build.Extensions\Microsoft.NET.Build.Extensions.targets</MicrosoftNETBuildExtensionsTargets>
+  </PropertyGroup>
+
+  <Import Condition="Exists('$(MicrosoftNETBuildExtensionsTargets)')" Project="$(MicrosoftNETBuildExtensionsTargets)" />
+</Project>

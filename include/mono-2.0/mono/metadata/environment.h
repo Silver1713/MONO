@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1b3e4d280a0d99af3ffe4c8efdf2bb7b630f93b89b6ed64793226922ab0ca267
-size 468
+/**
+ * \file
+ * System.Environment support internal calls
+ *
+ * Author:
+ *	Dick Porter (dick@ximian.com)
+ *
+ * (C) 2002 Ximian, Inc
+ */
+
+#ifndef _MONO_METADATA_ENVIRONMENT_H_
+#define _MONO_METADATA_ENVIRONMENT_H_
+
+#include <mono/utils/mono-publib.h>
+
+MONO_BEGIN_DECLS
+
+MONO_API int32_t mono_environment_exitcode_get (void);
+MONO_API void mono_environment_exitcode_set (int32_t value);
+
+MONO_END_DECLS
+
+#endif /* _MONO_METADATA_ENVIRONMENT_H_ */

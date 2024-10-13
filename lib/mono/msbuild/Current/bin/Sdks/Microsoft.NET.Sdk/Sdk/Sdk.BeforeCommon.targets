@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c8ee4b8125199d86a294b1d0cdf4e81b912292f5303eb72e3385387b7763ad87
-size 639
+<!--
+***********************************************************************************************
+Sdk.BeforeCommon.targets
+
+WARNING:  DO NOT MODIFY this file unless you are knowledgeable about MSBuild and have
+          created a backup copy.  Incorrect changes to this file will make it
+          impossible to load or build your projects from the command-line or the IDE.
+
+Copyright (c) .NET Foundation. All rights reserved. 
+***********************************************************************************************
+-->
+<Project>
+  <Import Project="..\targets\Microsoft.NET.Sdk.BeforeCommon.targets" />
+</Project>

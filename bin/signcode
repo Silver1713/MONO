@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ebe4503a81071b69d3a4efc59788fdc86e3339c37ea7eedbcca5db2527e97695
-size 124
+#!/bin/sh
+exec "${BASH_SOURCE%/*}"/mono $MONO_OPTIONS "$(cygpath -w "${BASH_SOURCE%/*}"/../lib/mono/4.5/)"signcode.exe "$@"

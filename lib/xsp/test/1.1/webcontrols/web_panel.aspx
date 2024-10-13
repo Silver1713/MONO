@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5d5f6c7ef3c9853e3019f30db1bd4945b3b7eebdd05f0a53d3de7542315f28cb
-size 538
+<%@ Page language="C#" %>
+<%@ Register TagPrefix="mono" TagName="MonoSamplesHeader" src="~/controls/MonoSamplesHeader.ascx" %>
+<html>
+<link rel="stylesheet" type="text/css" href="/mono-xsp.css">
+<title>Panel with a HyperLink</title>
+<body><mono:MonoSamplesHeader runat="server"/>
+<form runat="server">
+<asp:Panel id="pan" runat="server" ForeColor="green" Height="100px" Width="150px">
+<asp:HyperLink id="hyper" NavigateUrl="http://www.go-mono.com"
+Text="Mono site" Target="_top" runat="server"/>
+<p>
+</asp:Panel>
+</form>
+</body>
+</html>
+

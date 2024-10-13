@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:177f3c6e2fb0b77a957a139080ee662af906961cf9c058dc7fa32f817c9ec2c8
-size 805
+<%@ Page language="C#" %>
+<%@ Register TagPrefix="mono" TagName="MonoSamplesHeader" src="~/controls/MonoSamplesHeader.ascx" %>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/mono-xsp.css">
+<title>RadioButton</title>
+</head>
+<body><mono:MonoSamplesHeader runat="server"/>
+<form runat="server">
+	<asp:RadioButton id="r1" Text="One" GroupName="group1" runat="server" Checked="True" />
+	<br>
+	<asp:RadioButton id="r2" Text="Two" GroupName="group1" runat="server"/>
+	<br>
+	<asp:RadioButton id="r3"  Text="Three" GroupName="group1" runat="server"/>
+	<br>
+	Here another group of radio buttons.
+	<br>
+	<asp:RadioButton id="r4" Text="Ein" GroupName="group2" runat="server"/>
+	<br>
+	<asp:RadioButton id="r5"  Text="Zwei" GroupName="group2" runat="server" checked="true"/>
+	<br>
+</form>
+</body>
+</html>

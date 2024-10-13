@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:73ec550696a99788f2e9c3709de8f11a3857a1b55a7abb9ba00001915cf3fbd5
-size 506
+<%@ Page language="C#" %>
+<%@ Register TagPrefix="mono" TagName="MonoSamplesHeader" src="~/controls/MonoSamplesHeader.ascx" %>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/mono-xsp.css">
+<title>HyperLink</title>
+</head>
+<body><mono:MonoSamplesHeader runat="server"/>
+<asp:HyperLink id="hyper"
+	ImageUrl="http://www.mono-project.com/files/8/8d/Mono-gorilla-aqua.100px.png"
+	NavigateUrl="http://www.ximian.com"
+	Text="Ximian"
+	Target="_top"
+	runat="server">
+
+</asp:HyperLink>
+
+</body>
+</html>

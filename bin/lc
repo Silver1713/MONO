@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:22a9683c7e64739262e5e4fd3c597b60ec61e39983107202ac84f4f612c2dd59
-size 118
+#!/bin/sh
+exec "${BASH_SOURCE%/*}"/mono $MONO_OPTIONS "$(cygpath -w "${BASH_SOURCE%/*}"/../lib/mono/4.5/)"lc.exe "$@"

@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:182670973f3d548d6c828a61c84036f84c056e0c4b05db3618a5e77b1dc0c1cc
-size 211
+#!/bin/sh
+MONO_GC_PARAMS="nursery-size=64m,$MONO_GC_PARAMS" exec "${BASH_SOURCE%/*}"/mono --assembly-loader=strict $MONO_OPTIONS "$(cygpath -w "${BASH_SOURCE%/*}"/../lib/)mono/msbuild/15.0/bin/MSBuild.dll" "$@"

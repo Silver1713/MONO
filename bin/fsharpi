@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:10a19e59383ecbb29e4cebf5ee7dacec467d8dd0e4a4fb4a3b3c1b50ffc94168
-size 400
+#!/bin/sh
+EXEC="exec "
+
+if test x"$1" = x--debug; then
+   DEBUG=--debug
+   shift
+fi
+
+if test x"$1" = x--gdb; then
+   shift
+   EXEC="gdb --eval-command=run --args "
+fi
+
+if test x"$1" = x--valgrind; then
+  shift
+  EXEC="valgrind $VALGRIND_OPTIONS"   
+fi
+
+$EXEC "${BASH_SOURCE%/*}"/mono $DEBUG $MONO_OPTIONS "$(cygpath -w "${BASH_SOURCE%/*}"/../lib/)mono/fsharp/fsi.exe" --exename:$(basename "$0") "$@"

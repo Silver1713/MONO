@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f3afc7a749e99728a1f08cce1abea4d88d6ce42cc2cb53ea8a94e0b0ae4adac0
-size 317
+Name: System.Web.Extensions.Design
+Description: System.Web.Extensions.Design ASP.NET 2.0 add-on
+Version: 1.0.61025.0
+Libs: -r:/cygdrive/d/j/workspace/build-package-win-mono/2020-02/packaging/Windows/tmp/mono/lib/mono/gac/System.Web.Extensions.Design/1.0.61025.0__31bf3856ad364e35/System.Web.Extensions.Design.dll

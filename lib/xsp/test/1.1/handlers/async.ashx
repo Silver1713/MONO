@@ -1,3 +1,42 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:789e14b2a66745a0cec8fd3f8ea5c0b29e24f35a1e227d9b87127513a464e939
-size 896
+<%@ WebHandler Language="c#" class="XSPTest.AsyncTest" debug="true" %>
+
+using System;
+using System.Web;
+using System.Threading;
+
+namespace XSPTest
+{
+	public class AsyncTest : IHttpAsyncHandler
+	{
+		EventHandler evt;
+		HttpContext context;
+		
+		void Func (object o, EventArgs args)
+		{
+			context.Response.Write ("In async callback\n");
+			context.Response.ContentType = "text/plain";
+		}
+
+		public void ProcessRequest (HttpContext context)
+		{
+			throw new Exception ("Should not be called");
+		}
+
+		public IAsyncResult BeginProcessRequest (HttpContext context, AsyncCallback cb, object state)
+		{
+			this.context = context;
+			evt = new EventHandler (Func);
+			return evt.BeginInvoke (null, null, cb, state);
+		}
+
+		public void EndProcessRequest (IAsyncResult ares)
+		{
+			context.Response.Write ("End request being invoked.");
+		}
+
+		public bool IsReusable {
+			get { return false; }
+		}
+	}
+}
+

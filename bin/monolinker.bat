@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d591ea9672a7bfbe7ce3e93ba50151dc4651db1187527814de5204ffb2da2b07
-size 86
+@echo off
+"%~dp0\mono.exe" %MONO_OPTIONS% "%~dp0\..\lib\mono\4.5\monolinker.exe" %*

@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f4b0aab001f8ab5f8f6497a28c8b238bc5b09e4f9200be5f393251d3e386c342
-size 427
+<%@ Page Language="C#" Debug="true" %>
+<%@ Register TagPrefix="mono" TagName="MonoSamplesHeader" src="~/controls/MonoSamplesHeader.ascx" %>
+<html>
+<head><title>Transfer test 2</title>
+<link rel="stylesheet" type="text/css" href="/mono-xsp.css">
+</head>
+<body><mono:MonoSamplesHeader runat="server"/>
+FilePath: <%= Request.FilePath %> <br>
+CurrentExecutionFilePath: <%= Request.CurrentExecutionFilePath %> <br>
+</body>
+</html>
+
